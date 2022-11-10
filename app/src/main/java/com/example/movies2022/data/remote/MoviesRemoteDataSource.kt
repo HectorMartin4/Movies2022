@@ -9,5 +9,5 @@ class MoviesRemoteDataSource {
         it.toDomain()
     }
 
-    fun getMovie(movieId: Int): Movie = apiService.getMovie(movieId)!!.toDomain()
+    fun getMovie(movieId: String): Movie = apiService.getMovie(movieId)!!.toDomain()
 }
