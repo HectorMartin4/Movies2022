@@ -1,13 +1,14 @@
-package com.example.movies2022.domain.data.local.xml
+package com.example.movies2022.data.local.xml
 
 import android.content.SharedPreferences
-import com.example.commons.GsonJSerializer
+import com.example.commons.Serializer
 import com.example.movies2022.domain.Movie
-import com.example.movies2022.domain.data.MoviesLocalDataSource
+import com.example.movies2022.data.MoviesLocalDataSource
 
 class MoviesXmlLocalDataSource(
     private val sharedPreferences: SharedPreferences,
-    private val jSerializer: GsonJSerializer) : MoviesLocalDataSource
+    private val jSerializer: Serializer
+) : MoviesLocalDataSource
 {
     override fun save(movies: List<Movie>) {
         movies.forEach { movie ->
@@ -29,9 +30,4 @@ class MoviesXmlLocalDataSource(
             jSerializer.fromJson(it, Movie::class.java)
         }
     }
-
-    override fun delete(movieId: Int) {
-        sharedPreferences.edit().remove(movieId.toString()).apply()
-    }
-
 }
