@@ -1,7 +1,7 @@
 package com.example.movies2022.data.local.xml
 
 import android.content.SharedPreferences
-import com.example.commons.Serializer
+import com.example.app.commons.Serializer
 import com.example.movies2022.domain.Movie
 import com.example.movies2022.data.MoviesLocalDataSource
 
@@ -25,7 +25,7 @@ class MoviesXmlLocalDataSource(
         jSerializer.fromJson(it.value as String, Movie::class.java)
     }
 
-    override fun findById(movieId: Int): Movie? {
+    override fun findById(movieId: String): Movie? {
         return sharedPreferences.getString(movieId.toString(), null)?.let {
             jSerializer.fromJson(it, Movie::class.java)
         }

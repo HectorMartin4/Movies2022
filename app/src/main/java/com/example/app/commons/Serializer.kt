@@ -1,4 +1,4 @@
-package com.example.commons
+package com.example.app.commons
 
 import com.google.gson.Gson
 
