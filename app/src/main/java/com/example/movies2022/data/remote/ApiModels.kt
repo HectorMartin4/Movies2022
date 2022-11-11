@@ -1,6 +1,6 @@
-package com.example.movies2022.domain
+package com.example.movies2022.data.remote
 
-data class Movie(
+data class ApiMovieModel(
     val id: String,
     val title: String,
     val plot: String,
@@ -8,4 +8,4 @@ data class Movie(
     val rating: Float,
     val year: Int,
     val poster: String
-    )
+)
