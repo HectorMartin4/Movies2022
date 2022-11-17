@@ -25,7 +25,7 @@ class MoviesXmlLocalDataSource(
         jSerializer.fromJson(it.value as String, Movie::class.java)
     }
 
-    override fun findById(movieId: Int): Movie? {
+    override fun findById(movieId: String): Movie? {
         return sharedPreferences.getString(movieId.toString(), null)?.let {
             jSerializer.fromJson(it, Movie::class.java)
         }
