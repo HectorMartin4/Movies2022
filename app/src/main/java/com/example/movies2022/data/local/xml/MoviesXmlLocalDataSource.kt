@@ -3,7 +3,7 @@ package com.example.movies2022.data.local.xml
 import android.content.SharedPreferences
 import com.example.app.commons.Serializer
 import com.example.movies2022.domain.Movie
-import com.example.movies2022.data.MoviesLocalDataSource
+import com.example.movies2022.data.local.MoviesLocalDataSource
 
 class MoviesXmlLocalDataSource(
     private val sharedPreferences: SharedPreferences,

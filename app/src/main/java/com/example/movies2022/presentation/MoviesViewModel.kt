@@ -3,7 +3,6 @@ package com.example.movies2022.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.movies2022.domain.GetMoviesFeedUseCase
-import com.example.movies2022.domain.Movie
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -15,7 +14,7 @@ class MoviesViewModel(private val moviesFeedUseCase: GetMoviesFeedUseCase) :
         viewModelScope.launch(Dispatchers.IO) {
             val movie = moviesFeedUseCase.execute()
             withContext(Dispatchers.Main) {
-                callback.onCall(Movie)
+                callback.onCall(movie)
             }
         }
     }

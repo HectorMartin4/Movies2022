@@ -1,7 +1,6 @@
 package com.example.movies2022.data.local
 
 import com.example.app.data.MemDataStore
-import com.example.movies2022.data.MoviesLocalDataSource
 import com.example.movies2022.domain.Movie
 
 class MovieLocalMemDataSource(private val dataStore: MemDataStore<Movie>): MoviesLocalDataSource {

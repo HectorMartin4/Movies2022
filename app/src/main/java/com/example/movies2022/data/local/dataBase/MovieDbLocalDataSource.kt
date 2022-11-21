@@ -3,7 +3,7 @@ package com.example.movies2022.data.local.dataBase
 import android.content.Context
 import androidx.room.Room
 import com.example.app.data.AppDatabase
-import com.example.movies2022.data.MoviesLocalDataSource
+import com.example.movies2022.data.local.MoviesLocalDataSource
 import com.example.movies2022.domain.Movie
 
 class MovieDbLocalDataSource(val applicationContext: Context): MoviesLocalDataSource {

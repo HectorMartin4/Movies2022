@@ -1,4 +1,4 @@
-package com.example.movies2022.data
+package com.example.movies2022.data.local
 
 import com.example.movies2022.domain.Movie
 
