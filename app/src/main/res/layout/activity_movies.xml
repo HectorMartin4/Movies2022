@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".presentation.MoviesActivity">
 
+
+
+    <!--
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_movies"
         android:layout_width="match_parent"
@@ -13,5 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@layout/view_item_movie"
         app:layout_constraintTop_toTopOf="parent" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

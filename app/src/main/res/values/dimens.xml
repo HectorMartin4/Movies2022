@@ -7,4 +7,6 @@
     <dimen name="margin_text">5dp</dimen>
     <dimen name="star_size">20dp</dimen>
     <dimen name="margin_end">10dp</dimen>
+    <dimen name="margin_text_detail">30dp</dimen>
+    <dimen name="poster_height">200dp</dimen>
 </resources>
