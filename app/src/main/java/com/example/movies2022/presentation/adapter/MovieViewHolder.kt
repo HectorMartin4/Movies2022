@@ -18,6 +18,7 @@ class MovieViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             year.text = model.year.toString()
             genre.text = model.genre
             rate.text = model.rating.toString()
+
         }
 
     }

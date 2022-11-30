@@ -25,6 +25,7 @@ class MoviesAdapter : RecyclerView.Adapter<MovieViewHolder>() {
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         holder.render(dataSet[position])
+
     }
 
     override fun getItemCount(): Int = dataSet.size

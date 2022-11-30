@@ -15,6 +15,7 @@ class MoviesViewModel(private val moviesFeedUseCase: GetMoviesFeedUseCase) :
             val movie = moviesFeedUseCase.execute()
             withContext(Dispatchers.Main) {
                 callback.onCall(movie)
+
             }
         }
     }

@@ -18,6 +18,7 @@ class MoviesFactory {
                 GetMoviesFeedUseCase(
                     MoviesDataRepository(
                         MovieDbLocalDataSource(context), MoviesRemoteDataSource()
+
                     )
                 )
             )

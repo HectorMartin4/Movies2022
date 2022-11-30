@@ -42,6 +42,7 @@ class MoviesActivity : AppCompatActivity() {
         viewModel.obtainMovies(object : MoviesCallback {
             override fun onCall(movie: List<Movie>) {
                 updateList(movie)
+
             }
         })
     }
